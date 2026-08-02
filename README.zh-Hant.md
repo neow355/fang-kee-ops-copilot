@@ -2,6 +2,8 @@
 
 [English](README.md)
 
+[![CI](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml)
+
 這是一個處理客戶查詢和文件問答的雙語後台原型。我曾替一間小型清拆公司製作網站、設定 Google Ads，亦要協助整理查詢；這個專案源於那些實際工作。
 
 它是獨立開發的作品集，不是公司正在使用的正式系統。程式庫內的人名、項目、文件和查詢均為合成資料。

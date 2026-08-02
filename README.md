@@ -2,6 +2,8 @@
 
 [繁體中文](README.zh-Hant.md)
 
+[![CI](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml)
+
 A bilingual back-office prototype for customer enquiries and document Q&A. I built it after working on the website, Google Ads and enquiry handling for a small demolition contractor.
 
 This is an independent portfolio project, not the contractor's live system. All names, jobs, documents and enquiries in the repository are synthetic.
