@@ -1,4 +1,4 @@
-# 方記 AI 營運助理後端
+# Ops Copilot後端
 
 FastAPI + SQLAlchemy 的可離線示範後端。預設使用 SQLite 及可重現的本地 hash embedding／抽取式回答；生產環境可切換 PostgreSQL，設定 `OPENAI_API_KEY` 後會使用 OpenAI provider。
 
@@ -7,7 +7,7 @@ FastAPI + SQLAlchemy 的可離線示範後端。預設使用 SQLite 及可重現
 需要 Python 3.11+。
 
 ```powershell
-cd fang-kee-ops-copilot/backend
+cd ops-copilot/backend
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 pip install -e ".[dev]"
@@ -16,11 +16,11 @@ python -m app.seed
 uvicorn app.main:app --reload
 ```
 
-預設 seed 帳戶為 `admin@fangkee.example` / `ChangeMe123!`，只供本機示範。其他示範角色使用 `public|client|staff|manager@fangkee.example`，密碼相同。正式部署必須透過環境變數更換。Swagger UI 位於 `http://localhost:8000/docs`。
+預設 seed 帳戶為 `admin@demo.example` / `ChangeMe123!`，只供本機示範。其他示範角色使用 `public|client|staff|manager@demo.example`，密碼相同。正式部署必須透過環境變數更換。Swagger UI 位於 `http://localhost:8000/docs`。
 
 ### 環境變數
 
-- `DATABASE_URL`：預設 `sqlite:///./fangkee.db`；PostgreSQL 範例 `postgresql+psycopg://user:pass@db/fangkee`
+- `DATABASE_URL`：預設 `sqlite:///./ops_copilot.db`；PostgreSQL 範例 `postgresql+psycopg://user:pass@db/ops_copilot`
 - `SECRET_KEY`：JWT 簽署密鑰，正式環境必填且不可使用預設值
 - `SECURE_COOKIES=true`：HTTPS 生產環境必須開啟
 - `STORAGE_DIR`：上傳檔案目錄，預設 `./storage`
@@ -60,11 +60,11 @@ pytest
 ## Docker
 
 ```powershell
-docker build -t fangkee-backend .
+docker build -t ops-copilot-backend .
 docker run --rm -p 8000:8000 `
   -e SECRET_KEY="replace-with-random-secret" `
   -e DATABASE_URL="postgresql+psycopg://user:pass@host/db" `
   -e SECURE_COOKIES=true `
-  -v fangkee-storage:/app/storage `
-  fangkee-backend
+  -v ops-copilot-storage:/app/storage `
+  ops-copilot-backend
 ```

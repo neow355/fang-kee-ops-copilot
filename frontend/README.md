@@ -1,4 +1,4 @@
-# 方記 AI 營運協作平台（前端）
+# Ops Copilot 前端（前端）
 
 使用 Next.js 16 App Router、React 19、TypeScript 及原生 CSS 建立的內部學習示範介面。
 
@@ -45,8 +45,8 @@ npm run build
 建置時必須傳入公開 API URL：
 
 ```bash
-docker build --build-arg NEXT_PUBLIC_API_URL=http://api.example.com/api -t fang-kee-frontend .
-docker run --rm -p 3000:3000 fang-kee-frontend
+docker build --build-arg NEXT_PUBLIC_API_URL=http://api.example.com/api -t ops-copilot-frontend .
+docker run --rm -p 3000:3000 ops-copilot-frontend
 ```
 
 ## 使用限制

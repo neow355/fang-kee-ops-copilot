@@ -38,7 +38,7 @@ export function ProjectPage() {
           </div>
         </div>
         <div className="project-monogram" aria-hidden="true">
-          <span lang="zh-Hant">方</span>
+          <span lang="zh-Hant">O</span>
           <small>OPS COPILOT</small>
         </div>
       </header>

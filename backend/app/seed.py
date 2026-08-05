@@ -15,7 +15,7 @@ from .security import hash_password
 
 DEMO_TEXT = """## 服務時間 {#hours}
 
-方記門市營業時間為星期一至星期六上午九時至下午六時，星期日休息。
+示範門市營業時間為星期一至星期六上午九時至下午六時，星期日休息。
 
 ## 回覆流程 {#response}
 
@@ -48,7 +48,7 @@ def _seed_users(db: Session) -> User:
         email = (
             settings.seed_admin_email.lower()
             if role == Role.admin.value
-            else f"{role}@fangkee.example"
+            else f"{role}@demo.example"
         )
         user = db.scalar(select(User).where(User.email == email))
         if not user:
@@ -124,7 +124,7 @@ def seed(db: Session, include_demo: bool = True) -> User:
         path.write_text(DEMO_TEXT, encoding="utf-8")
         document = Document(
             source_id="demo-policy",
-            title="方記營運示範指引",
+            title="營運示範指引",
             filename="demo-policy.md",
             storage_path=str(path),
             content_type="text/markdown",
@@ -149,7 +149,7 @@ def seed(db: Session, include_demo: bool = True) -> User:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Seed 方記 AI demo data")
+    parser = argparse.ArgumentParser(description="Seed Ops Copilot demo data")
     parser.add_argument("--no-demo", action="store_true", help="Only create the admin user")
     args = parser.parse_args()
     initialize_database()

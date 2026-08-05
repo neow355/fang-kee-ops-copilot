@@ -1,4 +1,4 @@
-{"id":"demo-q01","role":"public","query":"你們提供哪些清拆服務？","synthetic":true,"disclaimer":"非官方示範，不構成專業意見"}
+{"id":"demo-q01","role":"public","query":"你們提供哪些現場服務？","synthetic":true,"disclaimer":"非官方示範，不構成專業意見"}
 {"id":"demo-q02","role":"public","query":"初步詢價需要甚麼場地資料？","synthetic":true,"disclaimer":"非官方示範，不構成專業意見"}
 {"id":"demo-q03","role":"staff","query":"海風商場項目的施工時間限制是甚麼？","synthetic":true,"disclaimer":"非官方示範，不構成專業意見"}
 {"id":"demo-q04","role":"staff","query":"青禾辦公室尚未批准的變更是甚麼？","synthetic":true,"disclaimer":"非官方示範，不構成專業意見"}

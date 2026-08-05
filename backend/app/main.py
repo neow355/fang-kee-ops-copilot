@@ -49,7 +49,7 @@ async def lifespan(_: FastAPI):
     yield
 
 
-app = FastAPI(title="方記 AI 營運助理 API", version="1.0.0", lifespan=lifespan)
+app = FastAPI(title="Ops Copilot API", version="1.0.0", lifespan=lifespan)
 app.add_middleware(
     CORSMiddleware,
     allow_origins=settings.allowed_origins,

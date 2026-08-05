@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the synthetic Fang Kee evaluation set against a configurable HTTP API."""
+"""Run the synthetic Ops evaluation set against a configurable HTTP API."""
 
 from __future__ import annotations
 
@@ -174,7 +174,7 @@ def aggregate(results: list[dict[str, Any]]) -> dict[str, Any]:
 def markdown_report(report: dict[str, Any]) -> str:
     summary = report["summary"]
     lines = [
-        "# 方記 AI 合成評估報告",
+        "# Ops Copilot 合成評估報告",
         "",
         "> 非官方技術示範；資料完全合成，不構成任何專業意見。",
         "",
@@ -207,7 +207,7 @@ def markdown_report(report: dict[str, Any]) -> str:
 
 def main() -> int:
     base = Path(__file__).resolve().parent
-    parser = argparse.ArgumentParser(description="Evaluate the Fang Kee synthetic RAG demo.")
+    parser = argparse.ArgumentParser(description="Evaluate the Ops synthetic RAG demo.")
     parser.add_argument("--dataset", type=Path, default=base / "dataset.json")
     parser.add_argument("--api-url", default=os.getenv("EVAL_API_URL", "http://localhost:8000/api/chat"))
     parser.add_argument(
@@ -231,7 +231,7 @@ def main() -> int:
     token = os.getenv("EVAL_API_TOKEN")
     fallback_email = os.getenv("EVAL_EMAIL", "")
     fallback_password = os.getenv("EVAL_PASSWORD", "")
-    admin_email = os.getenv("SEED_ADMIN_EMAIL", "admin@fangkee.example")
+    admin_email = os.getenv("SEED_ADMIN_EMAIL", "admin@demo.example")
     credentials: dict[str, dict[str, str]] = {}
     if os.getenv("EVAL_CREDENTIALS_JSON"):
         parsed = json.loads(os.environ["EVAL_CREDENTIALS_JSON"])
@@ -256,7 +256,7 @@ def main() -> int:
                             if fallback_email
                             else admin_email
                             if role == "admin"
-                            else f"{role}@fangkee.example"
+                            else f"{role}@demo.example"
                         ),
                         "password": fallback_password,
                     }

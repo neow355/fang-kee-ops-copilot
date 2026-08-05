@@ -1,18 +1,18 @@
-# Fang Kee Ops Copilot
+# Ops Copilot
 
 [繁體中文](README.zh-Hant.md)
 
 [![CI](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml)
 
-A bilingual back-office prototype for customer enquiries and document Q&A. I built it after working on the website, Google Ads and enquiry handling for a small demolition contractor.
+A bilingual back-office prototype for customer enquiries and document Q&A. It shows how a field-services workflow can combine enquiry logging, document retrieval and role-aware access in one runnable stack.
 
-This is an independent portfolio project, not the contractor's live system. All names, jobs, documents and enquiries in the repository are synthetic.
+This is an independent portfolio project, not any company's live system. All names, jobs, documents and enquiries in the repository are synthetic.
 
 ![Project notes page](docs/images/project-en.png)
 
 ## Why I built it
 
-The original business is small. Enquiries can arrive through the website, phone or messaging, while useful job information lives in separate documents. I wanted to test what a more structured workflow might look like without pretending that a chat box alone solves the problem.
+Field-services businesses are often small. Enquiries can arrive through the website, phone or messaging, while useful job information lives in separate documents. I wanted to test what a more structured workflow might look like without pretending that a chat box alone solves the problem.
 
 The result is a runnable system with:
 
@@ -82,7 +82,7 @@ cp .env.example .env
 Set unique values for `POSTGRES_PASSWORD` and `SECRET_KEY`. To use the "Fill demo account" button unchanged, set:
 
 ```dotenv
-SEED_ADMIN_EMAIL=admin@fangkee.example
+SEED_ADMIN_EMAIL=admin@demo.example
 SEED_ADMIN_PASSWORD=LocalDemo123!
 ```
 
@@ -142,4 +142,4 @@ docs/images/   Interface captures used in this README
 
 ## Data and project status
 
-The prototype is not connected to [fangkeedemolition.com](https://fangkeedemolition.com/) or to real customer records. The site is background for the workflow only. Do not upload private or operational documents to a public deployment of this repository.
+The prototype is not connected to any live customer website or real customer records. Do not upload private or operational documents to a public deployment of this repository.

@@ -1,6 +1,6 @@
 [
-  {"id":"direct-001","category":"direct_answer","question":"方記示範系統提供哪些服務？","expected_sources":["handbook#services"],"should_refuse":false,"allowed_role":"public","notes":"應列出室內非結構性拆卸、店舖還原、廢料分類搬運及清理。"},
-  {"id":"direct-002","category":"direct_answer","question":"方記是否承接爆破工程？","expected_sources":["handbook#services"],"should_refuse":false,"allowed_role":"public","notes":"答案為不承接。"},
+  {"id":"direct-001","category":"direct_answer","question":"這套示範系統提供哪些服務？","expected_sources":["handbook#services"],"should_refuse":false,"allowed_role":"public","notes":"應列出室內非結構性拆卸、店舖還原、廢料分類搬運及清理。"},
+  {"id":"direct-002","category":"direct_answer","question":"示範公司是否承接爆破工程？","expected_sources":["handbook#services"],"should_refuse":false,"allowed_role":"public","notes":"答案為不承接。"},
   {"id":"direct-003","category":"direct_answer","question":"初步詢價需要記錄哪些資料？","expected_sources":["handbook#survey"],"should_refuse":false,"allowed_role":"public","notes":"列出場地、面積、樓層、物流、範圍及日期。"},
   {"id":"direct-004","category":"direct_answer","question":"初步詢價資料可否直接當成固定報價？","expected_sources":["handbook#survey"],"should_refuse":false,"allowed_role":"public","notes":"不可，仍須勘察與授權覆核。"},
   {"id":"direct-005","category":"direct_answer","question":"示範報價通常分成哪五項？","expected_sources":["handbook#pricing"],"should_refuse":false,"allowed_role":"public","notes":"人工、運輸、廢料、保護、管理。"},

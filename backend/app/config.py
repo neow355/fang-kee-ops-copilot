@@ -5,9 +5,9 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    database_url: str = "sqlite:///./fangkee.db"
+    database_url: str = "sqlite:///./ops_copilot.db"
     secret_key: str = "change-me-in-production"
-    session_cookie: str = "fangkee_session"
+    session_cookie: str = "ops_copilot_session"
     session_hours: int = 12
     secure_cookies: bool = False
     cors_origins: str = "http://localhost:3000"
@@ -17,7 +17,7 @@ class Settings(BaseSettings):
     openai_api_key: str | None = None
     openai_model: str = "gpt-4o-mini"
     seed_on_start: bool = False
-    seed_admin_email: str = "admin@fangkee.example"
+    seed_admin_email: str = "admin@demo.example"
     seed_admin_password: str = "ChangeMe123!"
     max_upload_bytes: int = 10 * 1024 * 1024
     retrieval_threshold: float = 0.08

@@ -83,7 +83,7 @@ export function LoginForm() {
         className="button secondary wide"
         type="button"
         onClick={() => {
-          setEmail("admin@fangkee.example");
+          setEmail("admin@demo.example");
           setPassword("LocalDemo123!");
         }}
       >

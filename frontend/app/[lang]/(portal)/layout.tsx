@@ -20,7 +20,7 @@ export default function PortalLayout({ children }: { children: React.ReactNode }
     <div className="portal-shell">
       <aside className="sidebar">
         <Link className="portal-brand" href={localePath("/dashboard")} aria-label={`${d.common.brand} ${d.common.product}`}>
-          <span className="brand-seal">方</span>
+          <span className="brand-seal">O</span>
           <div><strong>{d.common.brand}</strong><small>{d.common.product}</small></div>
         </Link>
         <nav className="sidebar-nav" aria-label={d.nav.label}>
@@ -40,7 +40,7 @@ export default function PortalLayout({ children }: { children: React.ReactNode }
       </aside>
       <div className="portal-body">
         <header className="mobile-topbar">
-          <Link className="portal-brand" href={localePath("/dashboard")}><span className="brand-seal">方</span><strong>{d.common.brand}</strong></Link>
+          <Link className="portal-brand" href={localePath("/dashboard")}><span className="brand-seal">O</span><strong>{d.common.brand}</strong></Link>
           <nav aria-label={d.nav.label}>
             {navigation.map((item) => <Link href={localePath(item.href)} key={item.href} aria-label={item.label}><Icon name={item.icon} size={19} /></Link>)}
           </nav>

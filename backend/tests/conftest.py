@@ -1,7 +1,7 @@
 import os
 from pathlib import Path
 
-os.environ["DATABASE_URL"] = "sqlite:///./test-fangkee.db"
+os.environ["DATABASE_URL"] = "sqlite:///./test-ops-copilot.db"
 os.environ["SECRET_KEY"] = "test-secret-key-only-with-at-least-32-bytes"
 os.environ["STORAGE_DIR"] = "./test-storage"
 os.environ["SEED_ADMIN_EMAIL"] = "admin@example.com"
@@ -91,7 +91,7 @@ def reset_database():
 
 def pytest_sessionfinish(session, exitstatus):
     engine.dispose()
-    Path("test-fangkee.db").unlink(missing_ok=True)
+    Path("test-ops-copilot.db").unlink(missing_ok=True)
 
 
 @pytest.fixture

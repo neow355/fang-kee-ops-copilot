@@ -9,7 +9,7 @@ const zhHant = {
     description: "一個把客戶查詢、文件檢索、角色權限和評估放在一起的全端原型。",
   },
   common: {
-    brand: "方記",
+    brand: "Ops",
     product: "營運協作平台",
     refresh: "重新整理",
     retry: "再試一次",
@@ -43,8 +43,8 @@ const zhHant = {
   },
   login: {
     kicker: "獨立開發的作品集專案",
-    title: "清拆公司的查詢和文件，原本散落在不同地方。",
-    body: "我先替這間小型公司做網站和處理廣告帶來的查詢，再把這些實際工作整理成一個可操作的後台原型。",
+    title: "現場服務公司的查詢和文件，原本散落在不同地方。",
+    body: "我把網站查詢、內部文件和回覆流程整理成一個可操作的後台原型，方便示範 RAG 與權限設計。",
     featureSource: "回答附上文件出處",
     featureReview: "權限在檢索前套用",
     caption: "INDEPENDENT PROJECT · 2026",
@@ -52,7 +52,7 @@ const zhHant = {
     panelTitle: "登入 Ops Copilot",
     panelIntro: "可用展示帳戶查看查詢、文件檢索和評估頁面。",
     email: "電郵",
-    emailPlaceholder: "admin@fangkee.example",
+    emailPlaceholder: "admin@demo.example",
     password: "密碼",
     passwordHint: "展示帳戶",
     passwordPlaceholder: "輸入密碼",
@@ -208,7 +208,7 @@ const zhHant = {
   project: {
     kicker: "專案背景",
     title: "我把實際做過的後勤工作，整理成一個可實際操作的 AI 後台。",
-    intro: "我曾替一間小型清拆公司製作網站、設定 Google Ads，亦要協助整理查詢。這個專案不是他們正在使用的正式系統，而是我用同一類工作流程做成的獨立原型。",
+    intro: "這是一個獨立作品集原型，示範如何把客戶查詢、內部文件和角色權限放在同一套後台。所有公司名稱、項目和文件均為合成資料。",
     primaryAction: "試用文件問答",
     secondaryAction: "查看評估結果",
     stats: [
@@ -242,7 +242,7 @@ const zhHant = {
     provenance: "所有展示資料均為合成內容；這個原型沒有接駁正式網站或真實客戶資料。",
   },
   footer: {
-    title: "Fang Kee Ops Copilot · 作品集",
+    title: "Ops Copilot · 作品集",
     note: "獨立原型 · 合成資料 · 未接駁正式網站",
   },
 } as const;
@@ -262,7 +262,7 @@ const en: Dictionary = {
     description: "A full-stack prototype that brings enquiries, document retrieval, role access and evaluation into one workflow.",
   },
   common: {
-    brand: "Fang Kee",
+    brand: "Ops",
     product: "Ops Copilot",
     refresh: "Refresh",
     retry: "Try again",
@@ -297,7 +297,7 @@ const en: Dictionary = {
   login: {
     kicker: "Independent portfolio project",
     title: "Enquiries and job documents were scattered across different tools.",
-    body: "After building the website and handling ad-driven enquiries for a small demolition contractor, I turned that day-to-day workflow into a working back-office prototype.",
+    body: "I packaged enquiry handling, internal documents and role-aware retrieval into a runnable back-office prototype for portfolio review.",
     featureSource: "Answers link back to source text",
     featureReview: "Roles are applied before retrieval",
     caption: "INDEPENDENT PROJECT · 2026",
@@ -305,7 +305,7 @@ const en: Dictionary = {
     panelTitle: "Sign in to Ops Copilot",
     panelIntro: "Use the demo account to inspect enquiries, retrieval and evaluation.",
     email: "Email",
-    emailPlaceholder: "admin@fangkee.example",
+    emailPlaceholder: "admin@demo.example",
     password: "Password",
     passwordHint: "Demo account",
     passwordPlaceholder: "Enter password",
@@ -461,7 +461,7 @@ const en: Dictionary = {
   project: {
     kicker: "Background",
     title: "I turned work I had already done into a back-office AI prototype that can be run and tested.",
-    intro: "I built a website, set up Google Ads and helped organise incoming enquiries for a small demolition contractor. This is not their live system; it is an independent build based on the same kind of workflow.",
+    intro: "This is an independent portfolio prototype that shows how enquiries, internal documents and role-aware retrieval can live in one back office. All company names, projects and files are synthetic.",
     primaryAction: "Try document Q&A",
     secondaryAction: "View evaluation",
     stats: [
@@ -495,7 +495,7 @@ const en: Dictionary = {
     provenance: "All demo data is synthetic. The prototype is not connected to the live website or customer records.",
   },
   footer: {
-    title: "Fang Kee Ops Copilot · Portfolio",
+    title: "Ops Copilot · Portfolio",
     note: "Independent prototype · Synthetic data · Not connected to the live site",
   },
 };

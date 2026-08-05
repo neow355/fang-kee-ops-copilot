@@ -13,7 +13,7 @@ export function LoginPage() {
     <main className="login-page">
       <section className="login-brand" aria-labelledby="brand-title">
         <div className="brand-lockup">
-          <span className="brand-seal">方</span>
+          <span className="brand-seal">O</span>
           <span>{d.common.brand}</span>
         </div>
         <div className="brand-copy">
@@ -32,7 +32,7 @@ export function LoginPage() {
         <div className="login-card">
           <div className="login-toolbar">
             <div className="mobile-brand">
-              <span className="brand-seal">方</span>
+              <span className="brand-seal">O</span>
               <strong>{d.common.brand}</strong>
             </div>
             <LanguageSwitcher />

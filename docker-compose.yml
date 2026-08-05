@@ -1,12 +1,12 @@
-name: fang-kee-ops-copilot
+name: ops-copilot
 
 services:
   db:
     image: pgvector/pgvector:pg16
     restart: unless-stopped
     environment:
-      POSTGRES_DB: ${POSTGRES_DB:-fang_kee}
-      POSTGRES_USER: ${POSTGRES_USER:-fang_kee}
+      POSTGRES_DB: ${POSTGRES_DB:-ops_copilot}
+      POSTGRES_USER: ${POSTGRES_USER:-ops_copilot}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U \"$${POSTGRES_USER}\" -d \"$${POSTGRES_DB}\""]
@@ -24,14 +24,14 @@ services:
       context: ./backend
     restart: unless-stopped
     environment:
-      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-fang_kee}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-fang_kee}
+      DATABASE_URL: postgresql+psycopg://${POSTGRES_USER:-ops_copilot}:${POSTGRES_PASSWORD}@db:5432/${POSTGRES_DB:-ops_copilot}
       SECRET_KEY: ${SECRET_KEY:?Set SECRET_KEY in .env}
       SECURE_COOKIES: ${SECURE_COOKIES:-false}
       STORAGE_DIR: /app/storage
       OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       OPENAI_MODEL: ${OPENAI_MODEL:-gpt-4o-mini}
       SEED_ON_START: ${SEED_ON_START:-true}
-      SEED_ADMIN_EMAIL: ${SEED_ADMIN_EMAIL:-admin@fangkee.example}
+      SEED_ADMIN_EMAIL: ${SEED_ADMIN_EMAIL:-admin@demo.example}
       SEED_ADMIN_PASSWORD: ${SEED_ADMIN_PASSWORD:?Set SEED_ADMIN_PASSWORD in .env}
       RETRIEVAL_THRESHOLD: ${RETRIEVAL_THRESHOLD:-0.08}
       CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000}

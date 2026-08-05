@@ -16,7 +16,7 @@ export async function generateMetadata({
   return {
     title: {
       default: dictionary.meta.title,
-      template: `%s | Fang Kee Ops Copilot`,
+      template: `%s | Ops Copilot`,
     },
     description: dictionary.meta.description,
   };

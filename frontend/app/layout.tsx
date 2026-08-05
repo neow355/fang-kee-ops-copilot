@@ -4,8 +4,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Fang Kee Ops Copilot",
-    template: "%s | Fang Kee Ops Copilot",
+    default: "Ops Copilot",
+    template: "%s | Ops Copilot",
   },
   description: "A role-aware document Q&A and operations prototype.",
 };

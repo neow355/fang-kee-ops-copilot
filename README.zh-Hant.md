@@ -1,18 +1,18 @@
-# Fang Kee Ops Copilot
+# Ops Copilot
 
 [English](README.md)
 
 [![CI](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml/badge.svg)](https://github.com/neow355/fang-kee-ops-copilot/actions/workflows/ci.yml)
 
-這是一個處理客戶查詢和文件問答的雙語後台原型。我曾替一間小型清拆公司製作網站、設定 Google Ads，亦要協助整理查詢；這個專案源於那些實際工作。
+這是一個處理客戶查詢和文件問答的雙語後台原型，示範如何把現場服務類公司的查詢、內部文件和角色權限整合在同一套後台。
 
-它是獨立開發的作品集，不是公司正在使用的正式系統。程式庫內的人名、項目、文件和查詢均為合成資料。
+它是獨立開發的作品集，不是任何公司正在使用的正式系統。程式庫內的人名、項目、文件和查詢均為合成資料。
 
 ![專案說明頁](docs/images/project-en.png)
 
 ## 為何做這個專案
 
-這間公司的規模不大。查詢可能來自網站、電話或通訊軟件，工作資料則散落在不同文件。我想試做一套較有秩序的流程，同時避免把「加一個聊天介面」當成完整答案。
+這類現場服務公司的規模通常不大。查詢可能來自網站、電話或通訊軟件，工作資料則散落在不同文件。我想試做一套較有秩序的流程，同時避免把「加一個聊天介面」當成完整答案。
 
 目前可以實際操作的部分包括：
 
@@ -82,7 +82,7 @@ cp .env.example .env
 為 `POSTGRES_PASSWORD` 和 `SECRET_KEY` 設定各自的隨機值。若要直接使用「填入展示帳戶」按鈕，請設定：
 
 ```dotenv
-SEED_ADMIN_EMAIL=admin@fangkee.example
+SEED_ADMIN_EMAIL=admin@demo.example
 SEED_ADMIN_PASSWORD=LocalDemo123!
 ```
 
@@ -142,4 +142,4 @@ docs/images/   README 使用的介面截圖
 
 ## 資料與專案狀態
 
-這個原型沒有接駁 [fangkeedemolition.com](https://fangkeedemolition.com/) 或真實客戶記錄；網站只提供工作流程背景。請勿把私人或營運文件上傳到此程式庫的公開部署。
+這個原型沒有接駁任何正式客戶網站或真實客戶記錄。請勿把私人或營運文件上傳到此程式庫的公開部署。
