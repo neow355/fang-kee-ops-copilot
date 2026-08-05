@@ -27,9 +27,9 @@
 
 ## 介面
 
-| 登入 | 手機版文件問答 |
+| 登入 | 文件問答 |
 | --- | --- |
-| ![英文登入頁](docs/images/login-en.png) | ![英文手機版文件問答](docs/images/assistant-mobile-en.png) |
+| ![英文登入頁](docs/images/login-en.png) | ![英文文件問答](docs/images/assistant-en.png) |
 
 ## 一次問答經過的路徑
 

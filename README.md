@@ -27,9 +27,9 @@ The result is a runnable system with:
 
 ## Screens
 
-| Sign in | Mobile document Q&A |
+| Sign in | Document Q&A |
 | --- | --- |
-| ![English sign-in page](docs/images/login-en.png) | ![English mobile document Q&A](docs/images/assistant-mobile-en.png) |
+| ![English sign-in page](docs/images/login-en.png) | ![English document Q&A](docs/images/assistant-en.png) |
 
 ## Request path
 
